@@ -1,1 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Source+Code+Pro&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.5;
+    text-align: center;
+    background-color: #8df1a4;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#header {
+    display: flex;
+}
+
+#header-img {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 100px;
+}
+
+#nav-bar {
+    position: fixed;
+    top: 0px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(80, 249, 181, 20%);
+    overflow: hidden;
+}
+
+#title p {
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+
+@media only screen and (max-width:600px){
+#nav-bar ul {
+    display: flex;
+}    
+} 
+
+#video {
+    width: 600px;
+    height: 250px;
+    border: none;
+    padding-bottom: 10px;
+}
+
+#features-container {
+    max-width: 960px;
+    margin: 2rem auto 0;
+    overflow: hidden;
+}
+
+@media (min-width: 1200px) {
+  body {
+      background-color: rgb(255, 255, 255);
+  }
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.4rem 1.5rem;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #99beef;
+}
+
+.nav-link {
+    float: left;
+    display: block;
+    color: #000000;
+    text-align: center;
+    justify-content: space-evenly;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#info {
+    background-color: white;
+}
+
+#info h3 {
+    padding: 10px;
+}
+
+#info p {
+    font-size: 18px;
+    padding: 15px;
+}
+
+#extra-info {
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+
+#ready {
+    margin-bottom: -5px;
+}
+
+#features-container {
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+    padding: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    row-gap:3rem;
+}
+
+#features-container .feature {
+    display: inline-block;
+}
+
+#features-container .img {
+    padding: 1rem;
+    margin-left: 3rem;
+}
+
+#download {
+    padding: 3rem;
+    margin: auto;
+    text-align: center;
+}
+
+#main-footer {
+    background-color: #ccc;
+    padding: 1rem 4rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+#main-footer div a {
+    color: #333;
+    padding: 0.5rem 1rem;
+}
+
+#yt {
+    color: #333;
+    font-family: 'Source Code Pro', sans-serif;
+}
+
+#yt:hover{
+    text-decoration: underline;
+    color: green;
+}
+
+#icon-site {
+    color: #333;
+    font-family: 'Source Code Pro', sans-serif;
+}
+
+#icon-site:hover {
+    text-decoration: underline;
+    color: green;
+}
+
+#foot-link:hover {
+    text-decoration: underline;
+    color: green;
+}
+
+@media only screen and (max-width: 800px) {
+  #navbar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 0.3rem;
+  }
+}
+
+
+#features-container .feature {
+    flex-direction: column;
+}
+
+#download {
+    padding: 1rem;
+}
+
+#video {
+    width: 80%;
+    height: 30%;
+}
+
+#main-footer {
+    padding: 2.5rem 0.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-footer #yt {
+    margin: 1rem 0;
+}
