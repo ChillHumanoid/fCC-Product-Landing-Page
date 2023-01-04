@@ -1,216 +1,242 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Source+Code+Pro&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400,700,800,300);
 
 body {
-    font-family: 'Quicksand', sans-serif;
-    line-height: 1.5;
-    text-align: center;
-    background-color: #8df1a4;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', 'Helvetica New', Helvetica, sans-serif;
+  line-height: 1.45;
 }
 
-ul {
-    list-style: none;
+header {
+  color: #FFFFFF;
+  background-color: #284b63;
+  padding: 80px 0;
+  text-align: center;
 }
 
-a {
-    text-decoration: none;
+#logo {
+	width: 10%;
 }
 
-#header {
-    display: flex;
+.container {
+  margin: 0 auto;
+  padding: 0 20px 0 20px;
+  max-width: 900px;
 }
 
-#header-img {
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 100px;
+h1 {
+  font-size: 48px;
+  margin: 0 0 16px 0;
 }
 
-#nav-bar {
-    position: fixed;
-    top: 0px;
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgba(80, 249, 181, 20%);
-    overflow: hidden;
+h2 {
+  font-weight: 400;
+  font-size: 22px;
+  margin: 0 0 16px 0;
 }
 
-#title p {
-    padding-bottom: 10px;
-    font-size: 18px;
-}
-
-@media only screen and (max-width:600px){
-#nav-bar ul {
-    display: flex;
-}    
-} 
-
-#video {
-    width: 600px;
-    height: 250px;
-    border: none;
-    padding-bottom: 10px;
-}
-
-#features-container {
-    max-width: 960px;
-    margin: 2rem auto 0;
-    overflow: hidden;
-}
-
-@media (min-width: 1200px) {
-  body {
-      background-color: rgb(255, 255, 255);
-  }
+h3{
+  font-weight: 200;
+  margin: 0 0 16px 0;
+  font-size: 20px;
 }
 
 .btn {
-    display: inline-block;
-    padding: 0.4rem 1.5rem;
-    color: #333;
-    text-transform: uppercase;
-    font-weight: bold;
-    background-color: #99beef;
+  display: inline-block;
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+  background: #549DA0;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 16px;
+  cursor: pointer;
+  margin-top: 20px;
 }
 
-.nav-link {
-    float: left;
-    display: block;
-    color: #000000;
-    text-align: center;
-    justify-content: space-evenly;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 18px;
+.btn:hover {
+  background: #37696a;
+}
+
+section {
+  padding: 40px 0;
+  text-align: center;
 }
 
 #info {
-    background-color: white;
+   background-color: white;
 }
 
 #info h3 {
-    padding: 10px;
+  padding: 10px;
+	font-size: 25px;
+	text-align: center;
 }
 
 #info p {
-    font-size: 18px;
-    padding: 15px;
+   font-size: 15px;
+   padding-left: 10px;
+	text-align: center;
 }
 
-#extra-info {
-    padding-top: 5px;
-    padding-right: 10px;
-    padding-left: 10px;
-    padding-bottom: 5px;
+.features {
+  background: #FFFFFF;
+  color: #000000;
 }
 
-#ready {
-    margin-bottom: -5px;
+.feature {
+  width: 32%;
+  display: inline-block;
+  font-size: 16px;
 }
 
-#features-container {
-    text-align: center;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    justify-content: space-evenly;
-    padding: 1rem;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    row-gap:3rem;
+.feature img {
+  width: 40%;
+  height: 40%;
 }
 
-#features-container .feature {
-    display: inline-block;
+.quote {
+  background: #549DA0;
+  color: #FFFFFF;
 }
 
-#features-container .img {
-    padding: 1rem;
-    margin-left: 3rem;
+blockquote {
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
-#download {
-    padding: 3rem;
-    margin: auto;
-    text-align: center;
+blockquote p {
+  margin: 0 0 5px 0;
+  font-size: 24px;
 }
 
-#main-footer {
-    background-color: #ccc;
-    padding: 1rem 4rem;
-    margin-top: 2rem;
-    display: flex;
-    justify-content: space-between;
-    overflow: hidden;
+blockquote cite {
+  font-size: 16px;
+  font-style: italic;
 }
 
-#main-footer div a {
-    color: #333;
-    padding: 0.5rem 1rem;
+blockquote cite:before {
+  content: '-';
+  margin-right: 5px;
 }
 
-#yt {
-    color: #333;
-    font-family: 'Source Code Pro', sans-serif;
+footer {
+  background: #353535;
+  padding: 32px 0;
+  text-align: center;
+  color: white;
+  font-size: 12px;
 }
 
-#yt:hover{
-    text-decoration: underline;
-    color: green;
+footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-#icon-site {
-    color: #333;
-    font-family: 'Source Code Pro', sans-serif;
+footer li {
+  display: inline-block;
 }
 
-#icon-site:hover {
-    text-decoration: underline;
-    color: green;
+footer li a {
+  padding: 6px;
+  font-size: 14px;
+  text-decoration: none;
+  color: #74b9ff;
 }
 
-#foot-link:hover {
-    text-decoration: underline;
-    color: green;
+footer li a:hover {
+  color: #a29bfe;
 }
 
-@media only screen and (max-width: 800px) {
-  #navbar {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1.5rem 0.3rem;
-  }
+.copyright {
+	background: #353535;
+  text-align: center;
+  color: white;
+  font-size: 12px;
 }
 
-
-#features-container .feature {
-    flex-direction: column;
+.copyright a {
+	font-size: 14px;
+  text-decoration: none;
+  color: #6c5ce7;
 }
 
-#download {
-    padding: 1rem;
+.copyright a:hover {
+	color: #0984e3
 }
 
-#video {
-    width: 80%;
-    height: 30%;
+.submenu {
+  left: 50%;
+  transform: translate(-50%, 0);
+  text-align: center;
+  position: absolute;
+  background-color: #549DA0;
+  min-width: 160px;
+  border-radius: 5px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  display: none;
 }
 
-#main-footer {
-    padding: 2.5rem 0.5rem;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.submenu a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
 }
 
-#main-footer #yt {
-    margin: 1rem 0;
+.submenu a:hover {
+  background-color: #468486;
+}
+
+@media screen and (max-width: 480px) {
+    .btn {
+        display: block;
+        font-size: 18px;
+    }
+    h1 {
+        font-size: 32px;
+        margin: 0 0 8px 0;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    section {
+        padding: 25px 0 15px 0;
+    }
+    .feature {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+        margin: 0 0 10px 0;
+        font-size: 16px;
+    }
+    .feature img {
+        width: 15%;
+        min-width: 60px;
+        margin-right: 20px;
+    }
+    .quote {
+        padding: 30px 0;
+    }
+    blockquote p {
+        font-size: 18px;
+    }
+    blockquote cite {
+        font-size: 14px;
+    }
+    footer {
+        padding: 30px 0 10px 0;
+    }
+    footer li {
+        display: block;
+        margin: 5px 0;
+    }
+    .submenu {
+        width: 100%;
+        position: relative;
+    }
 }
